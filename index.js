@@ -11,6 +11,8 @@ const {
 const app = express();
 dbConn(URI)
 
+app.use(express.json());
+app.use(express.urlencoded());
 app.use("/selection", selectionRouter);
 app.use(express.static('public'));
-app.listen(PORT, () => console.log(`service running on port ${PORT}`))
+app.listen(PORT, () => console.log(`service running on port ${PORT}`));
