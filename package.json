@@ -1,0 +1,40 @@
+{
+  "name": "expressserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch .",
+    "test": "mocha **/*.test.js",
+    "deploy": "git push --all && git push --tags"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.2"
+  },
+  "devDependencies": {
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.7",
+    "mocha": "^11.0.1",
+    "morgan": "^1.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c215714n/expressserver.git"
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "mongodb",
+    "mongoose"
+  ],
+  "bugs": {
+    "url": "https://github.com/c215714n/expressserver/issues"
+  },
+  "homepage": "https://github.com/c215714n/expressserver#readme",
+  "description": "",
+  "author": "Cristian Racedo",
+  "license": "ISC"
+}
